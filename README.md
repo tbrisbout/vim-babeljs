@@ -3,7 +3,6 @@
 _This Plugin is in alpha state_
 
 This plugin is a simple wrapper for the babeljs.io transpiler.
-Currently, it only compile ES6 to ES5 using es2015 preset
 
 ## Setup
 
@@ -27,5 +26,17 @@ npm install babel-preset-es2015
 ```
 
 ## Usage
+
 You have the `:Babel` command to compile a javascript file (`js` and `es6` extensions are supported)
 This opens a new buffer with the output of the transpiled file
+
+## Configuration
+
+The following configuration is available: 
+```vim
+" Babel executable if not in $PATH
+let g:babeljs_command = "/path/to/babel"
+
+" Presets (defaults to es2015)
+let g:babeljs_presets = "react"
+```
